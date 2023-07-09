@@ -13,4 +13,14 @@ public class isSpecialCharacter {
         }
         return false;
     }
+
+    public static boolean containsSpecialCharacter(String line) {
+        for (char specialChar : SPECIAL_CHARACTERS) {
+            if (line.contains(Character.toString(specialChar))) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
+
