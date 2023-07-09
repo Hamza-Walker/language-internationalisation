@@ -14,9 +14,18 @@ public class isSpecialCharacter {
         return false;
     }
 
-    public static boolean containsSpecialCharacter(String line) {
+    public static boolean LineContainsSpecialCharacter(String line) {
         for (char specialChar : SPECIAL_CHARACTERS) {
             if (line.contains(Character.toString(specialChar))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean WordContainsSpecialCharacter(String word) {
+        for (char specialChar : SPECIAL_CHARACTERS) {
+            if (word.contains(Character.toString(specialChar))) {
                 return true;
             }
         }
